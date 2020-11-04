@@ -1,0 +1,15 @@
+[submodule "projects/numbers-converter"]
+	path = projects/numbers-converter
+	url = https://github.com/romanbyczk/numbers-converter.git
+[submodule "projects/clock"]
+	path = projects/clock
+	url = https://github.com/romanbyczk/clock.git
+[submodule "projects/CSS-Variables"]
+	path = projects/CSS-Variables
+	url = https://github.com/romanbyczk/CSS-Variables.git
+[submodule "projects/keyboard-drums"]
+	path = projects/keyboard-drums
+	url = https://github.com/romanbyczk/keyboard-drums.git
+[submodule "projects/movie-browser"]
+	path = projects/movie-browser
+	url = https://github.com/romanbyczk/movie-browser.git
