@@ -15,12 +15,21 @@
   $headers = 'From: ' + $_POST['email'];
   if(sanitize_my_email($_POST['email']))
   {
-    mail($receiving_email_address,filter_var($subject, FILTER_SANITIZE_STRING),filter_var($message, FILTER_SANITIZE_STRING),$headers);
-    echo "OK";
+    if(mail($receiving_email_address,filter_var($subject, FILTER_SANITIZE_STRING),filter_var($message, FILTER_SANITIZE_STRING),$headers))
+    {
+      http_response_code(200)
+      var_dump(http_response_code());
+    }
+    else
+    {
+      http_response_code(417)
+      var_dump(http_response_code());
+    }
   }
   else
   {
-    echo "ERROR IN EMAIL";
+    http_response_code(400)
+    var_dump(http_response_code());
   }
 
 ?>
