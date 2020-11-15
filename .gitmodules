@@ -10,3 +10,6 @@
 [submodule "projects/keyboard-drums"]
 	path = projects/keyboard-drums
 	url = https://github.com/romanbyczk/keyboard-drums.git
+[submodule "projects/movie-browser"]
+	path = projects/movie-browser
+	url = https://github.com/romanbyczk/movie-browser.git

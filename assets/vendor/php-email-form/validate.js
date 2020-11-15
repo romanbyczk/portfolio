@@ -136,8 +136,8 @@
             data: data,
             timeout: 40000,
         })
-            .done(function (data) {
-                if (data.stats == 200) {
+            .done(function (data, type, faa) {
+                if (faa.status === 200) {
                     this_form.find(".loading").slideUp();
                     this_form.find(".sent-message").slideDown();
                     this_form.find("input:not(input[type=submit]), textarea").val("");

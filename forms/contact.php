@@ -17,19 +17,16 @@
   {
     if(mail($receiving_email_address,filter_var($subject, FILTER_SANITIZE_STRING),filter_var($message, FILTER_SANITIZE_STRING),$headers))
     {
-      http_response_code(200)
-      http_response_code();
+      http_response_code(200);
     }
     else
     {
-      http_response_code(417)
-      http_response_code();
+      http_response_code(417);
     }
   }
   else
   {
-    http_response_code(400)
-    http_response_code();
+    http_response_code(400);
   }
 
 ?>
